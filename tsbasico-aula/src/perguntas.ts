@@ -10,31 +10,35 @@ export class Perguntas {
                     message: 'qual o seu nome',
                 },
                 {
-                    name: 'name',
+                    name: 'telefone',
                     type: 'input',
                     message: 'Qual o seu telefone',
                 },
                 {
-                    name: 'car',
+                    name: 'sabor',
                         type: 'list',
                         message: 'Qual sabor você gostaria?',
                         choices: ['Clabresa', 'Frango', '4 queijos', 'Coração', 'Portuguesa'],
-                        default: 3,
+                        default: 0,
                 },
                 {
-                    name: 'name',
-                    type: 'input',
-                    message: 'Qual o tamanho da pizza? você pode escolher entre\n Pequena \nMédia \nGrande ', 
+                    name: 'tamanho',
+                        type: 'list',
+                        message: 'Qual sabor você gostaria?',
+                        choices: ['Pequena', 'Media', 'Grande', 'Mega Grande', 'Da casa'],
+                        default: 0, 
                 },
                 {
-                    name: 'name',
+                    name: 'quantidade',
                     type: 'input',
                     message: 'Quantas pizzas ?',
                 },
                 {
-                    name: 'name',
-                    type: 'input',
-                    message: 'Gostaria que nós entregássemos?',
+                    name: 'entrega',
+                    type: 'list',
+                    message: 'Gostaria da entrega?',
+                    choices: ['Sim', 'Não'],
+                    default: 0, 
                 }
             ]
         ).then(
